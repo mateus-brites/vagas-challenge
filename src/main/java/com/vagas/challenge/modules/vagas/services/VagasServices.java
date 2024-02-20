@@ -1,5 +1,7 @@
 package com.vagas.challenge.modules.vagas.services;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.vagas.challenge.modules.vagas.entities.VagasEntity;
@@ -17,5 +19,9 @@ public class VagasServices {
         var newVaga = vagasRepository.save(vaga);
 
         return newVaga;
+    }
+
+    public List<VagasEntity> getAll() {
+        return vagasRepository.findAll();
     }
 }
