@@ -1,8 +1,11 @@
 package com.vagas.challenge.modules.vagas.services;
 
+import org.springframework.stereotype.Service;
+
 import com.vagas.challenge.modules.vagas.entities.VagasEntity;
 import com.vagas.challenge.modules.vagas.repositories.VagasRepository;
 
+@Service
 public class VagasServices {
     final VagasRepository vagasRepository;
 
