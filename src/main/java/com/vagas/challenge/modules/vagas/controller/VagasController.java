@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.vagas.challenge.modules.vagas.dto.VagasDTO;
 import com.vagas.challenge.modules.vagas.entities.VagasEntity;
 import com.vagas.challenge.modules.vagas.services.VagasServices;
-
-import ch.qos.logback.core.joran.util.beans.BeanUtil;
 import jakarta.validation.Valid;
 
 @RestController

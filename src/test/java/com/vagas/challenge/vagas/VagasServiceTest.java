@@ -1,7 +1,5 @@
 package com.vagas.challenge.vagas;
 
-import java.sql.SQLException;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -33,7 +31,7 @@ public class VagasServiceTest {
             "Vagas",
             "Backend Java",
             "Backend Java Pleno",
-            "Campinas",
+            "A",
             2);
         
         BeanUtils.copyProperties(dto, vaga);
@@ -45,12 +43,10 @@ public class VagasServiceTest {
         Assertions.assertEquals(newVaga.getEmpresa(), "Vagas");
         Assertions.assertNotNull(newVaga.getId());
         Assertions.assertEquals(1, size);
-
-        System.out.println(newVaga);
     }
 
     @Test
-    @DisplayName("Shoulde not be able create a new vaga with null value")
+    @DisplayName("Shoulde not be able create a new vaga with null argument value")
     void createVagaFail() {
         var vaga = new VagasEntity();
         var dto = new VagasDTO(
