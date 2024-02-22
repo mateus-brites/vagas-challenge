@@ -1,12 +1,16 @@
 package com.vagas.challenge.modules.vagas.entities;
 
+import java.util.List;
 import java.util.UUID;
+
+import com.vagas.challenge.modules.candidacy.entities.CandidacyEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -31,6 +35,9 @@ public class VagasEntity {
 
     @Column(nullable = false)
     private Integer nivel;
+
+    @OneToMany(mappedBy = "vagas")
+    private List<CandidacyEntity> candidacy;
 
     public UUID getId() {
         return id;
