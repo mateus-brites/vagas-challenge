@@ -19,3 +19,10 @@ For this challenge, I chose to use the Java language with the PostgreSQL databas
 1- Run ``` docker compose up ```
 
 2- Run ``` mvn spring-boot:run ```
+
+3- The application will be available on **http://localhost:3000**
+
+3- The doc will be available on **http://localhost:3000/swagger-ui/index.html#/**
+
+#### obs:
+the score is not implements
