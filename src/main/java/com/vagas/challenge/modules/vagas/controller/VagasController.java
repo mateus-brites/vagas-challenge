@@ -28,8 +28,6 @@ public class VagasController {
     public ResponseEntity<VagasEntity> create(@RequestBody @Valid VagasDTO dto){
         var Vaga = new VagasEntity();
 
-        System.out.println(dto);
-
         BeanUtils.copyProperties(dto, Vaga);
 
         var newVaga = vagasServices.create(Vaga);

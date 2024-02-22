@@ -35,7 +35,6 @@ public class CandidacyService {
         }
 
         if (!vagasExist) {
-            System.out.println("ERROUuuuu");
             throw new EntityNotFoundException("vagasId");
         }
 
