@@ -11,7 +11,7 @@ This is a technical challenge of [VAGAS](https://www.vagas.com.br/).
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ## ABOUT
-This is a solution created by me for an old technical challenge for the backend position at VAGAS company. To see the complete challenge, click [here]().
+This is a solution created by me for an old technical challenge for the backend position at VAGAS company. To see the complete challenge, click [here](https://github.com/VAGAS/desafio-tecnico).
 
 For this challenge, I chose to use the Java language with the PostgreSQL database. To create the database, I used Docker Compose, which is widely used in corporate projects.
 
